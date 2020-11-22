@@ -13,15 +13,13 @@ export default function Home({ allPostsData }) {
       </Head>
       <section className={utilStyles.headingMd}>
         <p>
-          Freelance<br/>
+          Freelance in digital Health<br/>
           ・Product Manager<br/>
           ・Bizdev<br/>
-          ・Engineer(Backend)<br/>
+          ・Software Engineer<br/>
           ・Digital Marketing<br/>
         </p>
         <p>
-          デジタルヘルスケア領域で経験を積んできました。<br/>
-          1991年生まれ 鹿児島県出身<br/>
           2016.10~2019.06 PREVENT CTO<br/>
           2019.07~2020.08 LINE Healthcare PdM<br/>
           2020.09~        Freelance<br/>
