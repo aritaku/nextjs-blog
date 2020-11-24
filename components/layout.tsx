@@ -19,7 +19,7 @@ export default function Layout({
         <link rel="icon" href="/favicon.ico" />
         <meta
           name="description"
-          content="Learn how to build a personal website using Next.js"
+          content="aritaku blog about Healthcare business, Product management, Engineering & Design..."
         />
         <meta 
           property="og:image"
