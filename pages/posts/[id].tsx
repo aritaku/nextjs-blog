@@ -1,9 +1,11 @@
 import Head from 'next/head'
 import Layout from '../../components/layout'
 import Date from '../../components/date'
+import Share from '../../components/share'
 import { getAllPostIds, getPostData } from '../../lib/posts'
 import utilStyles from '../../styles/utils.module.css'
 import { GetStaticProps, GetStaticPaths } from 'next'
+import { useRouter } from 'next/router'
 
 export default function Post({
   postData
@@ -14,6 +16,8 @@ export default function Post({
     contentHtml: string
   }
 }) {
+  const router = useRouter()
+  const { id } = router.query
   return (
     <Layout>
       <Head>
@@ -26,6 +30,7 @@ export default function Post({
         </div>
       </article>
       <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
+      <Share postPath={"posts/"+id} title={postData.title}></Share>
     </Layout>
   )
 }
